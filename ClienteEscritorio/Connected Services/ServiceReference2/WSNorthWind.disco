@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.dais-w-02.somee.com/WSNorthWind.asmx?wsdl" docRef="http://www.dais-w-02.somee.com/WSNorthWind.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.dais-w-02.somee.com/WSNorthWind.asmx" xmlns:q1="http://tempuri.org/" binding="q1:WSNorthwindSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.dais-w-02.somee.com/WSNorthWind.asmx" xmlns:q2="http://tempuri.org/" binding="q2:WSNorthwindSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

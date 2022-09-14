@@ -1,0 +1,10 @@
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\bin\Debug\ClienteEscritorio.exe.config
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\bin\Debug\ClienteEscritorio.exe
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\bin\Debug\ClienteEscritorio.pdb
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.csproj.AssemblyReference.cache
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.Form1.resources
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.Properties.Resources.resources
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.csproj.GenerateResource.cache
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.csproj.CoreCompileInputs.cache
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.exe
+C:\Users\steff\source\repos\WS Sunat\ClienteEscritorio\obj\Debug\ClienteEscritorio.pdb

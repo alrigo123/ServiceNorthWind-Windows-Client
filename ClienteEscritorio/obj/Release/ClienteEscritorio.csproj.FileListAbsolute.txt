@@ -1,0 +1,30 @@
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\bin\Release\ClienteEscritorio.exe.config
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\bin\Release\ClienteEscritorio.exe
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\bin\Release\ClienteEscritorio.pdb
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.AssemblyReference.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.Form1.resources
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.Properties.Resources.resources
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.GenerateResource.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.CoreCompileInputs.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.exe
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\WS Sunat\ClienteEscritorio\obj\Release\ClienteEscritorio.pdb
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\bin\Release\ClienteEscritorio.exe.config
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\bin\Release\ClienteEscritorio.exe
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\bin\Release\ClienteEscritorio.pdb
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.AssemblyReference.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.Properties.Resources.resources
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.GenerateResource.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.CoreCompileInputs.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.exe
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.pdb
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_Final\ClienteEscritorio\obj\Release\ClienteEscritorio.Dashboard.resources
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\bin\Release\ClienteEscritorio.exe.config
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\bin\Release\ClienteEscritorio.exe
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\bin\Release\ClienteEscritorio.pdb
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.AssemblyReference.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.Dashboard.resources
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.Properties.Resources.resources
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.GenerateResource.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.csproj.CoreCompileInputs.cache
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.exe
+D:\Alex\10mo Semestre 2022 - II\Plataformas de Software\1er Aporte\Venta_FinalTets\ClienteEscritorio\obj\Release\ClienteEscritorio.pdb
