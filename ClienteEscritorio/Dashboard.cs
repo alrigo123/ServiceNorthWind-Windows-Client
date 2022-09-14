@@ -50,7 +50,7 @@ namespace ClienteEscritorio
         {
             
         }
-
+        //TAB SHIPPERS + Methods
         private void btnAgregarShip_Click(object sender, EventArgs e)
         {
             string companyNameShipp = txtCompanyNameShipp.Text.ToString();
@@ -74,7 +74,6 @@ namespace ClienteEscritorio
             servicio.ActualizarShippers(idShipper, companyNameShipp, phoneCompany);
             dgvShipping.DataSource = servicio.ListarShippers().Tables[0];
         }
-
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
@@ -90,6 +89,7 @@ namespace ClienteEscritorio
 
         }
 
+        //TAB product + Methods
         private void btnAgregarProduct_Click(object sender, EventArgs e)
         {
             string productName = txtCompanyNameShipp.Text.ToString();
@@ -129,6 +129,9 @@ namespace ClienteEscritorio
             dgvProduct.DataSource = servicio.ListarProducts().Tables[0];
         }
 
+
+        //TAB suppliers + Methods
+
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             string idSupplier = txtSupplierId.Text.ToString();
@@ -145,7 +148,7 @@ namespace ClienteEscritorio
             string homePage = txtHomePageSupplier.Text.ToString();
 
             servicio.ActualizarSuppliers(idSupplier, companyName, contactName, contactTitle, address, city, region, postalCode, country, phone, fax, homePage);
-            dgvShipping.DataSource = servicio.ListarProducts().Tables[0];
+            dgvSupplier.DataSource = servicio.ListarSuppliers().Tables[0];
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
