@@ -31,6 +31,8 @@ namespace ClienteEscritorio
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtSupplierId = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -58,6 +60,27 @@ namespace ClienteEscritorio
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtIdProduct = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtDiscontinued = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtRecorderLevel = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtUnitsOnOrder = new System.Windows.Forms.TextBox();
+            this.txtUnitsInStock = new System.Windows.Forms.TextBox();
+            this.txtCategoryIdProduct = new System.Windows.Forms.TextBox();
+            this.txtUnitPriceProduct = new System.Windows.Forms.TextBox();
+            this.txtSupplierIdProduct = new System.Windows.Forms.TextBox();
+            this.txtQuantityPerUnit = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnActualizarProduct = new System.Windows.Forms.Button();
             this.btnAgregarProduct = new System.Windows.Forms.Button();
             this.btnEliminarProduct = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -71,30 +94,8 @@ namespace ClienteEscritorio
             this.txtPhoneShipp = new System.Windows.Forms.TextBox();
             this.txtCompanyNameShipp = new System.Windows.Forms.TextBox();
             this.dgvShipping = new System.Windows.Forms.DataGridView();
-            this.btnActualizarProduct = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtProductName = new System.Windows.Forms.TextBox();
-            this.txtQuantityPerUnit = new System.Windows.Forms.TextBox();
-            this.txtUnitPriceProduct = new System.Windows.Forms.TextBox();
-            this.txtSupplierIdProduct = new System.Windows.Forms.TextBox();
-            this.txtUnitsInStock = new System.Windows.Forms.TextBox();
-            this.txtCategoryIdProduct = new System.Windows.Forms.TextBox();
-            this.txtUnitsOnOrder = new System.Windows.Forms.TextBox();
+            this.chxDiscontinued = new System.Windows.Forms.CheckBox();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.txtRecorderLevel = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtDiscontinued = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtIdProduct = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.txtSupplierId = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
@@ -146,6 +147,8 @@ namespace ClienteEscritorio
             this.tabPage1.Controls.Add(this.btnEliminar);
             this.tabPage1.Controls.Add(this.btnAgregar);
             this.tabPage1.Controls.Add(this.dgvSupplier);
+            this.tabPage1.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -153,188 +156,234 @@ namespace ClienteEscritorio
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Suppliers";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // txtSupplierId
+            // 
+            this.txtSupplierId.Location = new System.Drawing.Point(147, 46);
+            this.txtSupplierId.Name = "txtSupplierId";
+            this.txtSupplierId.Size = new System.Drawing.Size(100, 27);
+            this.txtSupplierId.TabIndex = 55;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label25.Location = new System.Drawing.Point(29, 49);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 19);
+            this.label25.TabIndex = 54;
+            this.label25.Text = "Supplier Id";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(342, 259);
+            this.label11.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(296, 242);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 13);
+            this.label11.Size = new System.Drawing.Size(84, 19);
             this.label11.TabIndex = 53;
             this.label11.Text = "Home Page";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(381, 223);
+            this.label10.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(296, 195);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 13);
+            this.label10.Size = new System.Drawing.Size(32, 19);
             this.label10.TabIndex = 52;
             this.label10.Text = "Fax";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(121, 258);
+            this.label9.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(29, 239);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.Size = new System.Drawing.Size(50, 19);
             this.label9.TabIndex = 51;
             this.label9.Text = "Phone";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(362, 184);
+            this.label8.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(296, 155);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.Size = new System.Drawing.Size(59, 19);
             this.label8.TabIndex = 50;
             this.label8.Text = "Country";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(98, 208);
+            this.label7.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(29, 195);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 13);
+            this.label7.Size = new System.Drawing.Size(87, 19);
             this.label7.TabIndex = 49;
             this.label7.Text = "Postal Code";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(364, 135);
+            this.label6.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(296, 121);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.Size = new System.Drawing.Size(54, 19);
             this.label6.TabIndex = 48;
             this.label6.Text = "Region";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(135, 173);
+            this.label5.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(29, 155);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 13);
+            this.label5.Size = new System.Drawing.Size(34, 19);
             this.label5.TabIndex = 47;
             this.label5.Text = "City";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(360, 88);
+            this.label4.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(296, 85);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 46;
             this.label4.Text = "Address";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 137);
+            this.label3.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(29, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.Size = new System.Drawing.Size(92, 19);
             this.label3.TabIndex = 45;
             this.label3.Text = "Contact Title";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(330, 46);
+            this.label2.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(296, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(101, 19);
             this.label2.TabIndex = 44;
             this.label2.Text = "Contact Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 94);
+            this.label1.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(29, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(111, 19);
             this.label1.TabIndex = 43;
             this.label1.Text = "Company Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtCompanyNameSuppliers
             // 
-            this.txtCompanyNameSuppliers.Location = new System.Drawing.Point(180, 87);
+            this.txtCompanyNameSuppliers.Location = new System.Drawing.Point(147, 82);
             this.txtCompanyNameSuppliers.Name = "txtCompanyNameSuppliers";
-            this.txtCompanyNameSuppliers.Size = new System.Drawing.Size(100, 20);
+            this.txtCompanyNameSuppliers.Size = new System.Drawing.Size(100, 27);
             this.txtCompanyNameSuppliers.TabIndex = 42;
             // 
             // txtContactTitle
             // 
-            this.txtContactTitle.Location = new System.Drawing.Point(180, 130);
+            this.txtContactTitle.Location = new System.Drawing.Point(147, 121);
             this.txtContactTitle.Name = "txtContactTitle";
-            this.txtContactTitle.Size = new System.Drawing.Size(100, 20);
+            this.txtContactTitle.Size = new System.Drawing.Size(100, 27);
             this.txtContactTitle.TabIndex = 41;
             // 
             // txtCitySupplier
             // 
-            this.txtCitySupplier.Location = new System.Drawing.Point(180, 166);
+            this.txtCitySupplier.Location = new System.Drawing.Point(147, 155);
             this.txtCitySupplier.Name = "txtCitySupplier";
-            this.txtCitySupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtCitySupplier.Size = new System.Drawing.Size(100, 27);
             this.txtCitySupplier.TabIndex = 40;
             // 
             // txtHomePageSupplier
             // 
-            this.txtHomePageSupplier.Location = new System.Drawing.Point(423, 256);
+            this.txtHomePageSupplier.Location = new System.Drawing.Point(415, 239);
             this.txtHomePageSupplier.Name = "txtHomePageSupplier";
-            this.txtHomePageSupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtHomePageSupplier.Size = new System.Drawing.Size(100, 27);
             this.txtHomePageSupplier.TabIndex = 39;
             // 
             // txtFaxSupplier
             // 
-            this.txtFaxSupplier.Location = new System.Drawing.Point(427, 216);
+            this.txtFaxSupplier.Location = new System.Drawing.Point(415, 192);
             this.txtFaxSupplier.Name = "txtFaxSupplier";
-            this.txtFaxSupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtFaxSupplier.Size = new System.Drawing.Size(100, 27);
             this.txtFaxSupplier.TabIndex = 38;
             // 
             // txtCountrySupplier
             // 
-            this.txtCountrySupplier.Location = new System.Drawing.Point(427, 177);
+            this.txtCountrySupplier.Location = new System.Drawing.Point(415, 155);
             this.txtCountrySupplier.Name = "txtCountrySupplier";
-            this.txtCountrySupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtCountrySupplier.Size = new System.Drawing.Size(100, 27);
             this.txtCountrySupplier.TabIndex = 37;
             // 
             // txtPostalcodeSuppliers
             // 
-            this.txtPostalcodeSuppliers.Location = new System.Drawing.Point(180, 205);
+            this.txtPostalcodeSuppliers.Location = new System.Drawing.Point(147, 192);
             this.txtPostalcodeSuppliers.Name = "txtPostalcodeSuppliers";
-            this.txtPostalcodeSuppliers.Size = new System.Drawing.Size(100, 20);
+            this.txtPostalcodeSuppliers.Size = new System.Drawing.Size(100, 27);
             this.txtPostalcodeSuppliers.TabIndex = 36;
             // 
             // txtPhoneSuppliers
             // 
-            this.txtPhoneSuppliers.Location = new System.Drawing.Point(176, 255);
+            this.txtPhoneSuppliers.Location = new System.Drawing.Point(147, 239);
             this.txtPhoneSuppliers.Name = "txtPhoneSuppliers";
-            this.txtPhoneSuppliers.Size = new System.Drawing.Size(100, 20);
+            this.txtPhoneSuppliers.Size = new System.Drawing.Size(100, 27);
             this.txtPhoneSuppliers.TabIndex = 35;
             // 
             // txtRegionSupplier
             // 
-            this.txtRegionSupplier.Location = new System.Drawing.Point(427, 132);
+            this.txtRegionSupplier.Location = new System.Drawing.Point(415, 122);
             this.txtRegionSupplier.Name = "txtRegionSupplier";
-            this.txtRegionSupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtRegionSupplier.Size = new System.Drawing.Size(100, 27);
             this.txtRegionSupplier.TabIndex = 34;
             // 
             // txtAddressSupplier
             // 
-            this.txtAddressSupplier.Location = new System.Drawing.Point(427, 85);
+            this.txtAddressSupplier.Location = new System.Drawing.Point(415, 82);
             this.txtAddressSupplier.Name = "txtAddressSupplier";
-            this.txtAddressSupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtAddressSupplier.Size = new System.Drawing.Size(100, 27);
             this.txtAddressSupplier.TabIndex = 33;
             // 
             // txtContactNameSupplier
             // 
-            this.txtContactNameSupplier.Location = new System.Drawing.Point(427, 43);
+            this.txtContactNameSupplier.Location = new System.Drawing.Point(415, 46);
             this.txtContactNameSupplier.Name = "txtContactNameSupplier";
-            this.txtContactNameSupplier.Size = new System.Drawing.Size(100, 20);
+            this.txtContactNameSupplier.Size = new System.Drawing.Size(100, 27);
             this.txtContactNameSupplier.TabIndex = 32;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(415, 362);
+            this.btnActualizar.Location = new System.Drawing.Point(321, 339);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(95, 42);
             this.btnActualizar.TabIndex = 31;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -342,9 +391,9 @@ namespace ClienteEscritorio
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(279, 362);
+            this.btnEliminar.Location = new System.Drawing.Point(203, 339);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(87, 42);
             this.btnEliminar.TabIndex = 30;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -352,9 +401,9 @@ namespace ClienteEscritorio
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(158, 362);
+            this.btnAgregar.Location = new System.Drawing.Point(81, 339);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(97, 42);
             this.btnAgregar.TabIndex = 29;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -363,21 +412,22 @@ namespace ClienteEscritorio
             // dgvSupplier
             // 
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSupplier.Location = new System.Drawing.Point(650, 20);
+            this.dgvSupplier.Location = new System.Drawing.Point(565, 20);
             this.dgvSupplier.Name = "dgvSupplier";
-            this.dgvSupplier.Size = new System.Drawing.Size(449, 439);
+            this.dgvSupplier.Size = new System.Drawing.Size(563, 452);
             this.dgvSupplier.TabIndex = 28;
             this.dgvSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSupplier_CellContentClick);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dgvProduct);
+            this.tabPage2.Controls.Add(this.chxDiscontinued);
             this.tabPage2.Controls.Add(this.txtIdProduct);
             this.tabPage2.Controls.Add(this.label24);
             this.tabPage2.Controls.Add(this.txtDiscontinued);
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.txtRecorderLevel);
             this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.dgvProduct);
             this.tabPage2.Controls.Add(this.txtUnitsOnOrder);
             this.tabPage2.Controls.Add(this.txtUnitsInStock);
             this.tabPage2.Controls.Add(this.txtCategoryIdProduct);
@@ -404,11 +454,204 @@ namespace ClienteEscritorio
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // txtIdProduct
+            // 
+            this.txtIdProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdProduct.Location = new System.Drawing.Point(120, 74);
+            this.txtIdProduct.Name = "txtIdProduct";
+            this.txtIdProduct.Size = new System.Drawing.Size(100, 27);
+            this.txtIdProduct.TabIndex = 23;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(13, 77);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(76, 19);
+            this.label24.TabIndex = 22;
+            this.label24.Text = "ID Product";
+            // 
+            // txtDiscontinued
+            // 
+            this.txtDiscontinued.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiscontinued.Location = new System.Drawing.Point(364, 256);
+            this.txtDiscontinued.Name = "txtDiscontinued";
+            this.txtDiscontinued.Size = new System.Drawing.Size(100, 27);
+            this.txtDiscontinued.TabIndex = 21;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(238, 259);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(93, 19);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "Discontinued";
+            // 
+            // txtRecorderLevel
+            // 
+            this.txtRecorderLevel.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecorderLevel.Location = new System.Drawing.Point(364, 206);
+            this.txtRecorderLevel.Name = "txtRecorderLevel";
+            this.txtRecorderLevel.Size = new System.Drawing.Size(100, 27);
+            this.txtRecorderLevel.TabIndex = 19;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(238, 209);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(95, 19);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "Reorder level";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
+            // 
+            // txtUnitsOnOrder
+            // 
+            this.txtUnitsOnOrder.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitsOnOrder.Location = new System.Drawing.Point(120, 256);
+            this.txtUnitsOnOrder.Name = "txtUnitsOnOrder";
+            this.txtUnitsOnOrder.Size = new System.Drawing.Size(100, 27);
+            this.txtUnitsOnOrder.TabIndex = 16;
+            // 
+            // txtUnitsInStock
+            // 
+            this.txtUnitsInStock.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitsInStock.Location = new System.Drawing.Point(364, 161);
+            this.txtUnitsInStock.Name = "txtUnitsInStock";
+            this.txtUnitsInStock.Size = new System.Drawing.Size(100, 27);
+            this.txtUnitsInStock.TabIndex = 15;
+            // 
+            // txtCategoryIdProduct
+            // 
+            this.txtCategoryIdProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryIdProduct.Location = new System.Drawing.Point(120, 206);
+            this.txtCategoryIdProduct.Name = "txtCategoryIdProduct";
+            this.txtCategoryIdProduct.Size = new System.Drawing.Size(100, 27);
+            this.txtCategoryIdProduct.TabIndex = 14;
+            // 
+            // txtUnitPriceProduct
+            // 
+            this.txtUnitPriceProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitPriceProduct.Location = new System.Drawing.Point(364, 116);
+            this.txtUnitPriceProduct.Name = "txtUnitPriceProduct";
+            this.txtUnitPriceProduct.Size = new System.Drawing.Size(100, 27);
+            this.txtUnitPriceProduct.TabIndex = 13;
+            // 
+            // txtSupplierIdProduct
+            // 
+            this.txtSupplierIdProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplierIdProduct.Location = new System.Drawing.Point(120, 161);
+            this.txtSupplierIdProduct.Name = "txtSupplierIdProduct";
+            this.txtSupplierIdProduct.Size = new System.Drawing.Size(100, 27);
+            this.txtSupplierIdProduct.TabIndex = 12;
+            // 
+            // txtQuantityPerUnit
+            // 
+            this.txtQuantityPerUnit.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantityPerUnit.Location = new System.Drawing.Point(364, 74);
+            this.txtQuantityPerUnit.Name = "txtQuantityPerUnit";
+            this.txtQuantityPerUnit.Size = new System.Drawing.Size(100, 27);
+            this.txtQuantityPerUnit.TabIndex = 11;
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductName.Location = new System.Drawing.Point(120, 116);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(100, 27);
+            this.txtProductName.TabIndex = 10;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(238, 164);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(97, 19);
+            this.label21.TabIndex = 9;
+            this.label21.Text = "Units In Stock";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(238, 119);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(72, 19);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Unit Price";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(238, 77);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(120, 19);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "Quantity Per Unit";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(13, 259);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(104, 19);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "Units On Order";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(13, 209);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(80, 19);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "CategoryID";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(13, 164);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(79, 19);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Supplier ID";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(13, 119);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(101, 19);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Product Name";
+            // 
+            // btnActualizarProduct
+            // 
+            this.btnActualizarProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarProduct.Location = new System.Drawing.Point(294, 321);
+            this.btnActualizarProduct.Name = "btnActualizarProduct";
+            this.btnActualizarProduct.Size = new System.Drawing.Size(100, 42);
+            this.btnActualizarProduct.TabIndex = 2;
+            this.btnActualizarProduct.Text = "Actualizar";
+            this.btnActualizarProduct.UseVisualStyleBackColor = true;
+            this.btnActualizarProduct.Click += new System.EventHandler(this.btnActualizarProduct_Click);
+            // 
             // btnAgregarProduct
             // 
-            this.btnAgregarProduct.Location = new System.Drawing.Point(107, 362);
+            this.btnAgregarProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProduct.Location = new System.Drawing.Point(63, 321);
             this.btnAgregarProduct.Name = "btnAgregarProduct";
-            this.btnAgregarProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarProduct.Size = new System.Drawing.Size(99, 42);
             this.btnAgregarProduct.TabIndex = 1;
             this.btnAgregarProduct.Text = "Agregar";
             this.btnAgregarProduct.UseVisualStyleBackColor = true;
@@ -416,9 +659,10 @@ namespace ClienteEscritorio
             // 
             // btnEliminarProduct
             // 
-            this.btnEliminarProduct.Location = new System.Drawing.Point(210, 362);
+            this.btnEliminarProduct.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProduct.Location = new System.Drawing.Point(179, 321);
             this.btnEliminarProduct.Name = "btnEliminarProduct";
-            this.btnEliminarProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarProduct.Size = new System.Drawing.Size(90, 42);
             this.btnEliminarProduct.TabIndex = 0;
             this.btnEliminarProduct.Text = "Eliminar";
             this.btnEliminarProduct.UseVisualStyleBackColor = true;
@@ -448,24 +692,27 @@ namespace ClienteEscritorio
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(161, 74);
+            this.label14.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(168, 124);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 13);
+            this.label14.Size = new System.Drawing.Size(81, 19);
             this.label14.TabIndex = 11;
             this.label14.Text = "Id Shippers";
             // 
             // txtIdShippers
             // 
-            this.txtIdShippers.Location = new System.Drawing.Point(258, 69);
+            this.txtIdShippers.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdShippers.Location = new System.Drawing.Point(279, 121);
             this.txtIdShippers.Name = "txtIdShippers";
-            this.txtIdShippers.Size = new System.Drawing.Size(100, 20);
+            this.txtIdShippers.Size = new System.Drawing.Size(100, 27);
             this.txtIdShippers.TabIndex = 10;
             // 
             // btnEliminarShipp
             // 
-            this.btnEliminarShipp.Location = new System.Drawing.Point(244, 293);
+            this.btnEliminarShipp.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarShipp.Location = new System.Drawing.Point(297, 307);
             this.btnEliminarShipp.Name = "btnEliminarShipp";
-            this.btnEliminarShipp.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarShipp.Size = new System.Drawing.Size(97, 48);
             this.btnEliminarShipp.TabIndex = 7;
             this.btnEliminarShipp.Text = "Eliminar";
             this.btnEliminarShipp.UseVisualStyleBackColor = true;
@@ -473,9 +720,10 @@ namespace ClienteEscritorio
             // 
             // btnActualizarShipp
             // 
-            this.btnActualizarShipp.Location = new System.Drawing.Point(406, 293);
+            this.btnActualizarShipp.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarShipp.Location = new System.Drawing.Point(422, 307);
             this.btnActualizarShipp.Name = "btnActualizarShipp";
-            this.btnActualizarShipp.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizarShipp.Size = new System.Drawing.Size(102, 48);
             this.btnActualizarShipp.TabIndex = 6;
             this.btnActualizarShipp.Text = "Actualizar";
             this.btnActualizarShipp.UseVisualStyleBackColor = true;
@@ -483,9 +731,10 @@ namespace ClienteEscritorio
             // 
             // btnAgregarShip
             // 
-            this.btnAgregarShip.Location = new System.Drawing.Point(103, 293);
+            this.btnAgregarShip.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarShip.Location = new System.Drawing.Point(174, 307);
             this.btnAgregarShip.Name = "btnAgregarShip";
-            this.btnAgregarShip.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarShip.Size = new System.Drawing.Size(105, 48);
             this.btnAgregarShip.TabIndex = 5;
             this.btnAgregarShip.Text = "Agregar";
             this.btnAgregarShip.UseVisualStyleBackColor = true;
@@ -494,239 +743,67 @@ namespace ClienteEscritorio
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(174, 209);
+            this.label13.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(168, 240);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 13);
+            this.label13.Size = new System.Drawing.Size(50, 19);
             this.label13.TabIndex = 4;
             this.label13.Text = "Phone";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(130, 119);
+            this.label12.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(168, 179);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 13);
+            this.label12.Size = new System.Drawing.Size(111, 19);
             this.label12.TabIndex = 3;
             this.label12.Text = "Company Name";
             // 
             // txtPhoneShipp
             // 
-            this.txtPhoneShipp.Location = new System.Drawing.Point(258, 202);
+            this.txtPhoneShipp.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneShipp.Location = new System.Drawing.Point(279, 237);
             this.txtPhoneShipp.Name = "txtPhoneShipp";
-            this.txtPhoneShipp.Size = new System.Drawing.Size(100, 20);
+            this.txtPhoneShipp.Size = new System.Drawing.Size(100, 27);
             this.txtPhoneShipp.TabIndex = 2;
             // 
             // txtCompanyNameShipp
             // 
-            this.txtCompanyNameShipp.Location = new System.Drawing.Point(258, 116);
+            this.txtCompanyNameShipp.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyNameShipp.Location = new System.Drawing.Point(279, 176);
             this.txtCompanyNameShipp.Name = "txtCompanyNameShipp";
-            this.txtCompanyNameShipp.Size = new System.Drawing.Size(100, 20);
+            this.txtCompanyNameShipp.Size = new System.Drawing.Size(100, 27);
             this.txtCompanyNameShipp.TabIndex = 1;
             this.txtCompanyNameShipp.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // dgvShipping
             // 
+            this.dgvShipping.AllowUserToOrderColumns = true;
             this.dgvShipping.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvShipping.Location = new System.Drawing.Point(601, 32);
+            this.dgvShipping.Location = new System.Drawing.Point(612, 85);
             this.dgvShipping.Name = "dgvShipping";
-            this.dgvShipping.Size = new System.Drawing.Size(441, 405);
+            this.dgvShipping.Size = new System.Drawing.Size(355, 179);
             this.dgvShipping.TabIndex = 0;
             this.dgvShipping.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShipping_CellContentClick);
             // 
-            // btnActualizarProduct
+            // chxDiscontinued
             // 
-            this.btnActualizarProduct.Location = new System.Drawing.Point(333, 362);
-            this.btnActualizarProduct.Name = "btnActualizarProduct";
-            this.btnActualizarProduct.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizarProduct.TabIndex = 2;
-            this.btnActualizarProduct.Text = "Actualizar";
-            this.btnActualizarProduct.UseVisualStyleBackColor = true;
-            this.btnActualizarProduct.Click += new System.EventHandler(this.btnActualizarProduct_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(46, 119);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(75, 13);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "Product Name";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(62, 181);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(59, 13);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Supplier ID";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(61, 244);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(60, 13);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "CategoryID";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(46, 301);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(77, 13);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Units On Order";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(276, 65);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(87, 13);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Quantity Per Unit";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(310, 127);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 13);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Unit Price";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(289, 187);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(74, 13);
-            this.label21.TabIndex = 9;
-            this.label21.Text = "Units In Stock";
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.Location = new System.Drawing.Point(147, 116);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(100, 20);
-            this.txtProductName.TabIndex = 10;
-            // 
-            // txtQuantityPerUnit
-            // 
-            this.txtQuantityPerUnit.Location = new System.Drawing.Point(378, 62);
-            this.txtQuantityPerUnit.Name = "txtQuantityPerUnit";
-            this.txtQuantityPerUnit.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantityPerUnit.TabIndex = 11;
-            // 
-            // txtUnitPriceProduct
-            // 
-            this.txtUnitPriceProduct.Location = new System.Drawing.Point(378, 124);
-            this.txtUnitPriceProduct.Name = "txtUnitPriceProduct";
-            this.txtUnitPriceProduct.Size = new System.Drawing.Size(100, 20);
-            this.txtUnitPriceProduct.TabIndex = 13;
-            // 
-            // txtSupplierIdProduct
-            // 
-            this.txtSupplierIdProduct.Location = new System.Drawing.Point(147, 178);
-            this.txtSupplierIdProduct.Name = "txtSupplierIdProduct";
-            this.txtSupplierIdProduct.Size = new System.Drawing.Size(100, 20);
-            this.txtSupplierIdProduct.TabIndex = 12;
-            // 
-            // txtUnitsInStock
-            // 
-            this.txtUnitsInStock.Location = new System.Drawing.Point(378, 187);
-            this.txtUnitsInStock.Name = "txtUnitsInStock";
-            this.txtUnitsInStock.Size = new System.Drawing.Size(100, 20);
-            this.txtUnitsInStock.TabIndex = 15;
-            // 
-            // txtCategoryIdProduct
-            // 
-            this.txtCategoryIdProduct.Location = new System.Drawing.Point(147, 241);
-            this.txtCategoryIdProduct.Name = "txtCategoryIdProduct";
-            this.txtCategoryIdProduct.Size = new System.Drawing.Size(100, 20);
-            this.txtCategoryIdProduct.TabIndex = 14;
-            // 
-            // txtUnitsOnOrder
-            // 
-            this.txtUnitsOnOrder.Location = new System.Drawing.Point(147, 298);
-            this.txtUnitsOnOrder.Name = "txtUnitsOnOrder";
-            this.txtUnitsOnOrder.Size = new System.Drawing.Size(100, 20);
-            this.txtUnitsOnOrder.TabIndex = 16;
+            this.chxDiscontinued.AutoSize = true;
+            this.chxDiscontinued.Location = new System.Drawing.Point(497, 362);
+            this.chxDiscontinued.Name = "chxDiscontinued";
+            this.chxDiscontinued.Size = new System.Drawing.Size(88, 17);
+            this.chxDiscontinued.TabIndex = 24;
+            this.chxDiscontinued.Text = "Discontinued";
+            this.chxDiscontinued.UseVisualStyleBackColor = true;
             // 
             // dgvProduct
             // 
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduct.Location = new System.Drawing.Point(598, 60);
+            this.dgvProduct.Location = new System.Drawing.Point(497, 25);
             this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.Size = new System.Drawing.Size(408, 288);
-            this.dgvProduct.TabIndex = 17;
-            // 
-            // txtRecorderLevel
-            // 
-            this.txtRecorderLevel.Location = new System.Drawing.Point(378, 247);
-            this.txtRecorderLevel.Name = "txtRecorderLevel";
-            this.txtRecorderLevel.Size = new System.Drawing.Size(100, 20);
-            this.txtRecorderLevel.TabIndex = 19;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(293, 250);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(70, 13);
-            this.label22.TabIndex = 18;
-            this.label22.Text = "Reorder level";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
-            // 
-            // txtDiscontinued
-            // 
-            this.txtDiscontinued.Location = new System.Drawing.Point(378, 298);
-            this.txtDiscontinued.Name = "txtDiscontinued";
-            this.txtDiscontinued.Size = new System.Drawing.Size(100, 20);
-            this.txtDiscontinued.TabIndex = 21;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(303, 301);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(69, 13);
-            this.label23.TabIndex = 20;
-            this.label23.Text = "Discontinued";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(61, 65);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(58, 13);
-            this.label24.TabIndex = 22;
-            this.label24.Text = "ID Product";
-            // 
-            // txtIdProduct
-            // 
-            this.txtIdProduct.Location = new System.Drawing.Point(147, 62);
-            this.txtIdProduct.Name = "txtIdProduct";
-            this.txtIdProduct.Size = new System.Drawing.Size(100, 20);
-            this.txtIdProduct.TabIndex = 23;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(98, 46);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(57, 13);
-            this.label25.TabIndex = 54;
-            this.label25.Text = "Supplier Id";
-            // 
-            // txtSupplierId
-            // 
-            this.txtSupplierId.Location = new System.Drawing.Point(176, 46);
-            this.txtSupplierId.Name = "txtSupplierId";
-            this.txtSupplierId.Size = new System.Drawing.Size(100, 20);
-            this.txtSupplierId.TabIndex = 55;
+            this.dgvProduct.Size = new System.Drawing.Size(626, 431);
+            this.dgvProduct.TabIndex = 29;
             // 
             // Dashboard
             // 
@@ -795,7 +872,6 @@ namespace ClienteEscritorio
         private System.Windows.Forms.DataGridView dgvShipping;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtIdShippers;
-        private System.Windows.Forms.DataGridView dgvProduct;
         private System.Windows.Forms.TextBox txtUnitsOnOrder;
         private System.Windows.Forms.TextBox txtUnitsInStock;
         private System.Windows.Forms.TextBox txtCategoryIdProduct;
@@ -819,5 +895,7 @@ namespace ClienteEscritorio
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txtSupplierId;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.CheckBox chxDiscontinued;
+        private System.Windows.Forms.DataGridView dgvProduct;
     }
 }

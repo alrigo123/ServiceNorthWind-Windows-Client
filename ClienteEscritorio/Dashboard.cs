@@ -103,14 +103,14 @@ namespace ClienteEscritorio
             string discontinued = txtDiscontinued.Text.ToString();
 
             servicio.AgregarProducts(productName, supplierId, categoryid, quantityUnit, unitPrice, unitInStock, unitOnOrder, recorderLevel, discontinued);
-            dgvShipping.DataSource = servicio.ListarProducts().Tables[0];
+            dgvProduct.DataSource = servicio.ListarProducts().Tables[0];
         }
 
         private void btnEliminarProduct_Click(object sender, EventArgs e)
         {
             string idProduct = txtIdProduct.Text.ToString();
             servicio.EliminarProducts(idProduct);
-            dgvShipping.DataSource = servicio.ListarProducts().Tables[0];
+            dgvProduct.DataSource = servicio.ListarProducts().Tables[0];
         }
 
         private void btnActualizarProduct_Click(object sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace ClienteEscritorio
             string recorderLevel = txtRecorderLevel.Text.ToString();
             string discontinued = txtDiscontinued.Text.ToString();
             servicio.ActualizarProducts(idProduct, productName, supplierId, categoryid, quantityUnit, unitPrice, unitInStock, unitOnOrder, recorderLevel, discontinued);
-            dgvShipping.DataSource = servicio.ListarProducts().Tables[0];
+            dgvProduct.DataSource = servicio.ListarProducts().Tables[0];
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -170,6 +170,11 @@ namespace ClienteEscritorio
             string idSupplier = txtSupplierId.Text.ToString();
             servicio.EliminarSuppliers(idSupplier);
             dgvSupplier.DataSource = servicio.ListarSuppliers().Tables[0];
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
